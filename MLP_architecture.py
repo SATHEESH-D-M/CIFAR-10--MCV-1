@@ -68,6 +68,6 @@ class MLP(nn.Module):
         x = self.relu3(self.fc3(x))  # --> (batch_size, 100)
 
         # Output layer
-        x = self.softmax(self.output(x))  # --> (batch_size, 10)
+        # x = self.softmax(self.output(x))  # --> (batch_size, 10)
 
         return x
